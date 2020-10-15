@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/portal/style1.css"
+    <script src="../js/form.js"></script>
+
+  </head>
+  <body>
+    <div class="container register-form top-buffer-1">
+        <div class="form">
+            <div class="note">
+              <p> FORM </p>
+            </div>
+       <div class="form-content bk">
+              <form action="#" method="POST">
+                  <fieldset class="scheduler-border">
+                      <legend class="scheduler-border">Personal Information</legend>
+                      <div class="row">
+                           <div class="col-SM-1">
+                            <label for="fname">First Name</label>
+                            <input type="name" class="form-control" id="fmane" placeholder="Firstname" name="fname">
+                          <div class="col-sm-5">
+                            <label for="lname">Last Name</label>
+                            <input type="name" class="form-control" id="fmane" placeholder="lastname" name="lname">
+                          </div>
+                      </div>
+                      <div class="col-sm-5">
+                        <label for="fname">Father's Name</label>
+                        <input type="name" class="form-control" id="fname" placeholder="father's name" name="fname">
+                      </div><br>
+                  </div>
+                      <div class="section-to-print" id="section-to-print">
+                      <div class="row top-buffer">
+                          <div class="col-sm-3">
+                            <label for="email">Email ID</label>
+                            <input type="email" class="form-control" id="email" placeholder="xyz@xyz.com" name="email">
+                          </div>
+                          <div class="col-sm-3">
+                            <label for="dob">Date of Birth</label>
+                            <input name="date" class="form-control" id="dob" type="dob" />
+                          </div>
+                          <div class="col-sm-2">
+                            <label for="phone">Phone Number</label>
+                            <input name="phone" class="form-control" id="phone" type="phone" />
+                          </div>
+                          <div class="col-sm-4">
+                            <label for="phone">Gender / Sex</label></br>
+                              <div class="radio-inline"><label><input type="radio" name="sex" value="male" checked>Male</label></div>
+                              <div class="radio-inline"><label><input type="radio" name="sex" value="female">Female</label></div>
+                              <div class="radio-inline"><label><input type="radio" name="sex" value="transgender">Transgender</label></div>
+                          </div>
+                      </div>
+                      <div class="row top-buffer">
+                          <!-- Address -->
+                            <div class="form-group col-sm-3">
+                              <label for="inputAddress">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" name="add1" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group col-sm-3">
+                              <label for="inputAddress2">Address 2</label>
+                              <input type="text" class="form-control" id="inputAddress2" name="add2" placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                              <div class="form-group col-sm-2">
+                                <label for="inputCity">City</label>
+                                <input type="text" class="form-control" name="city" id="inputCity">
+                              </div>
+                              <div class="form-group col-sm-2">
+                                <label for="inputState">State</label>
+                                <select id="inputState" class="form-control">
+                                  <option selected>Choose...</option>
+                                  <option>india</option>
+                                </select>
+                              </div>
+                              <div class="form-group col-md-2">
+                                <label for="inputZip">Zip</label>
+                                <input type="text" class="form-control" name="zip" id="inputZip">
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                  </fieldset>
+             <button type ="submit" class="btn btn-success" value="submit">Submit </button>
+            <button onclick="window.print();return false;" class="btn btn-primary">Print </button>
+              </form>
+          </div>
+        </div>
+        </div>
+  </body>
+</html>

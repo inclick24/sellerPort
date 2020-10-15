@@ -1,0 +1,37 @@
+.navbar {
+    background: #996600 !important;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .navbar .nav-item .nav-link:hover .navbar .nav-item .nav-link {
+    color: #ffffff !important;
+  }
+  
+  nav.main-navigation {
+    position: relative;
+  }
+  
+  .nav-item {
+    /* margin: 10px;
+    padding: 10px;
+  
+    text-align: right;
+    line-height: 50px;
+    margin-left: 50px;
+    margin-top: 7px; */
+  }
+  .navbar-brand {
+    background-color: cornsilk;
+  }
+  body {
+    background-color: #f5f5f0;
+    margin: auto;
+    padding: 0px;
+  }
+  .img{
+    border-radius: 50%;
+  }
+   
+    
+   
