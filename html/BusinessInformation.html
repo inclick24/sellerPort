@@ -16,29 +16,28 @@
             <img src="..\images\logo.jpg" class="rounded-circle" height="150px" width="150px">
           </div>
           <h2 class="container">Business Information</h2>
-          <form action="" >
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Business Name:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Business Name">
+                <input id="businessName" type="text"  class="form-control" placeholder="Business Name">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Registration No.:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Registration No.">
+                <input id="registrationNo" type="text"  class="form-control" placeholder="Registration No.">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Business Mail:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Business Mail">
+                <input id="businessMail" type="text"  class="form-control" placeholder="Business Mail">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Address:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Address">
+                <input id="address" type="text"  class="form-control" placeholder="Address">
               </div>
             </div>
             <div class="form-group row">
@@ -66,13 +65,13 @@
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Pin Code:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Pin Code">
+                <input id="pinCode" type="text"  class="form-control" placeholder="Pin Code">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Website:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Website">
+                <input id="Website" type="text"  class="form-control" placeholder="Website">
               </div>
             </div>
             <div class="form-group row">
@@ -84,13 +83,13 @@
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Open Time:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Open Time">
+                <input id="openTime" type="text"  class="form-control" placeholder="Open Time">
               </div>
             </div>
             <div class="form-group row">
               <label for="staticEmail" class="col-sm-4 col-form-label">Close Time:</label>
               <div class="col-sm-7">
-                <input type="text"  class="form-control" id="staticEmail" value="Close Time">
+                <input id="closeTime" type="text"  class="form-control" placeholder="Close Time">
               </div>
             </div>
             <div class="form-group row">
@@ -127,12 +126,26 @@
                     <input class="form-check-input" type="checkbox">Wednesday
                   </label>
                 </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">thursday
+                  </label>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">friday
+                  </label>
+                </div>
+                <div class="form-group form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">saturday
+                  </label>
+                </div>
               </div>
             </div>
             <div class="container">
-              <a type="button" href="Dashboard.html" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">submit</a>
+              <button type="button" onClick="submit()" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">submit</button>
             </div>    
-          </form>
         </div>   
       </div>
     </div>  
@@ -142,5 +155,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/businessInformation.js"></script>
   </body>
 </html>

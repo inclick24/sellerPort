@@ -187,5 +187,10 @@
       display: block;
     }
   }
-  
+.bg-primary-sidebar {
+  background-color: #996600;
+}  
+.navbar-design {
+  height: 100%;
+}
     

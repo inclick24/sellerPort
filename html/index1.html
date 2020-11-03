@@ -15,21 +15,23 @@
                     <div class="container">
                         <img src="..\images\logo.jpg" class="rounded-circle" height="150px" width="150px">
                     </div>
-                    <form>    
+                    <div id="number-section">  
                         <div class="form-group"> 
-                            <input type="string" class="shadow p-3 mb-3 bg-white rounded btn btn-outline-primary form-control" placeholder="Mobile number" name="text1">
+                            <input id="mobile-no" value="" type="string" class="shadow p-3 mb-3 rounded btn btn-outline-primary form-control" placeholder="Mobile number" name="text1">
                         </div>
                         <div class="form-group">  
-                            <button type="button" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">Send OTP</button>
+                            <button onclick="sendOTP()" type="button" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">Send OTP</button>
+                        </div>
+                    </div> 
+                    <div id="otp-section" style="display: none;">
+                        <div class="form-group">
+                            <input id="otp-input" type="string" class="shadow p-3 mb-3 rounded btn btn-outline-primary form-control" placeholder="Enter OTP" name="text2">
                         </div>
                         <div class="form-group">
-                            <input type="string" class="shadow p-3 mb-3 bg-white rounded btn btn-outline-primary form-control" placeholder="Enter OTP" name="text2">
+                            <button onclick="verifyOTP()" type="button" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">Verify OTP</button>
                         </div>
-                        <div class="form-group">
-                            <a type="button" href="userInformation.html" class="shadow p-2 mb-3 rounded btn btn-primary btn-block">Verify OTP</a>
-                        </div>
-                    </form>
-                </div>   
+                    </div>   
+                </div>
             </div>
         </div>  
         <!-- jQuery library -->
@@ -38,5 +40,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../js/index1.js"></script>
     </body>
 </html>
+
